@@ -40,6 +40,15 @@ nav {
   line-height: 1;
 }
 
+.wordmark a {
+  color: black;
+  text-decoration: none;
+}
+
+.wordmark a:hover {
+  text-decoration: underline;
+}
+
 article {
   display: flex;
   flex-direction: column;
