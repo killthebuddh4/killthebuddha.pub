@@ -1,3 +1,5 @@
+/* base */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,28 @@
   font-family: serif;
   line-height: 1;
 }
+
+/* body */
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+
+/* content */
+
+p, h1, ul, ol, li, nav {
+  margin-bottom: 1rem;
+  max-width: 60ch;
+  line-height: 1.25;
+}
+
+/* links */
 
 a {
   text-decoration: none;
@@ -20,29 +44,27 @@ a:hover {
   text-decoration: underline;
 }
 
-p {
-  line-height: 1.2;
+/* publish time */
+
+time {
+  opacity: 0.3;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 2rem 0 3rem 0;
+  width: 60ch;
+  text-align: center;
+  padding-right: 4rem;
 }
 
-
-body {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  min-height: 100vh;
-  width: 100vw;
-}
+/* nav */
 
 nav {
   display: flex;
   flex-direction: column;
 }
 
-nav a {
-  line-height: 1.2;
-}
 
+/* wordmark */
 
 .wordmark {
   display: flex;
@@ -63,11 +85,6 @@ nav a {
   color: black;
 }
 
-article {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  max-width: 60ch;
-  gap: 1rem;
-  margin-bottom: 3rem;
+.wordmark h1 {
+  margin: 0;
 }
